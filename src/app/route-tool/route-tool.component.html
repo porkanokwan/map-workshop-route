@@ -1,0 +1,24 @@
+<div class="route-detail">
+  <div class="btn-group">
+    <button
+      type="button"
+      class="btnStart"
+      *ngIf="isStartRoute"
+      (click)="onClickStartRoute()"
+    >
+      Start Route
+    </button>
+    <button type="button" class="btnClear" (click)="onClickClearButton()">
+      Clear All
+    </button>
+  </div>
+
+  <div
+    class="list-text"
+    *ngFor="let item of mapDirection; let idx = index"
+    (click)="onClickDirection($event)"
+    [ngStyle]="{ backgroundColor: id === idx ? 'aliceblue' : '' }"
+  >
+    <p [id]="idx">{{ idx + 1 }}. {{ item.text }}</p>
+  </div>
+</div>

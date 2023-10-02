@@ -1,0 +1,12 @@
+<div class="container">
+  <div #mapViewRef class="map-view"></div>
+  <div class="container-route">
+    <app-route-tool
+      (onClickClearGraphic)="onClearGraphic()"
+      (onClickCreateRoute)="getRoute()"
+      (onClickToDirection)="onClickGoTo($event)"
+      [isStartRoute]="this.graphicsLayer.graphics.length > 1"
+      [mapDirection]="directionText"
+    ></app-route-tool>
+  </div>
+</div>

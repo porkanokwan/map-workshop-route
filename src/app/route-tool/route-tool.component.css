@@ -1,0 +1,26 @@
+.btn-group {
+  padding: 15px;
+}
+
+.btnStart {
+  color: white;
+  background-color: rgb(122, 165, 247);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btnClear {
+  color: white;
+  background-color: rgb(255, 88, 88);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.list-text {
+  text-align: left;
+}
