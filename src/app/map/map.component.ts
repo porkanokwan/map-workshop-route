@@ -25,7 +25,7 @@ export class MapComponent implements OnInit, OnDestroy {
   mapView!: any;
   graphicsLayer!: any;
   routeUrl =
-    'https://route-api.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World';
+    'https://route-api.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World'; // ต้อง login
   // 'https://sampleserver6.arcgisonline.com/arcgis/rest/services/NetworkAnalysis/SanDiego/NAServer/Route'; // ใช้ได้ใน SanDiego เท่านั้น
   directionText: { text: string; path: number[][] }[] = [];
   routeParams!: any;
